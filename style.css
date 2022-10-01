@@ -1,0 +1,114 @@
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+text-decoration: none;
+box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(DD.jpg);
+    
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-card{
+width: 401px;
+text-align: center;
+border-radius: 7px;
+}
+.card-header{
+background: #615756;
+padding: 61px 41px;
+}
+.picture img{
+display:block;
+width: 101px;
+height: 101px;
+border-radius: 47%;
+}
+.picture{
+
+display: inline-block;
+padding: 7px;
+background: linear-gradient(130deg, #730071,#ffbc42) ;
+margin: auto;
+border-radius: 47%;
+animation:animasyon 2s linear infinite;
+background-size:200% 200%;
+}
+@keyframes animasyon{
+23% {
+background-position: left bottom;
+}
+47% {
+background-position: right bottom;
+}
+73% {
+    background-position: right top;
+}
+101% {
+    background-position: left top;
+}
+}
+.name{
+color: #549f90;
+font-size: 29px;
+font-weight: 600;
+margin: 11px 0;
+}
+.desc{
+font-size: 17px;
+color: #ffb30f;
+}
+.sm{
+display: flex;
+justify-content: center;
+margin: 19px 0;
+
+
+}
+.sm a{
+color: #58a4b0;
+width: 53px;
+font-size: 23px;
+transition: .3s linear;
+}
+.sm a:hover{
+color: #e4b363;
+}
+.contact-btn{
+    font-size: large;
+display: inline-block;
+padding: 13px 47px;
+color:#58a4b0;
+border: 2px solid #cba135;
+border-radius: 5px;
+margin-top: 17px;
+transition: .3s linear;
+
+}
+.contact-btn:hover{
+    background: #4a001f;
+    color: #0f5257;
+}
+.card-footer{
+    background-color: #fafaff;
+    padding: 47px 11px;
+}
+.nb{
+display:flex;
+align-items:center;
+}
+.item{
+flex: 1;
+font-size: 13px;    
+}
+.item span{
+display: block;
+color: #0f5257;
+font-size: 29px;
+
+}
